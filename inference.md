@@ -23,6 +23,12 @@ System for machine learning inference.
 ## Model Serving
 
 - Announcing RedisAI 1.0: AI Serving Engine for Real-Time Applications [[Blog]](https://redislabs.com/blog/redisai-ai-serving-engine-for-real-time-applications/)
+- $\color{red}{(Read)(New)}$ SHEPHERD: Serving DNNs in the Wild [[paper]](https://hongzhangblaze.github.io/assets/pdf/shepherd.pdf)
+  - Hong Zhang (University of Waterloo), Yupeng Tang, Anurag Khandelwal (Yale University), Ion Stoica (UC Berkeley)
+  - NSDI 2023
+- $\color{red}{(New)}$ ORLOJ: Predictably Serving Unpredictable DNNs [[paper]](https://arxiv.org/pdf/2209.00159.pdf)
+  - Peifeng Yu, Yuqing Qiu, Xin Jin, Mosharaf Chowdhury (University of Michigan)
+  - arXiv
 - Cloudburst: Stateful Functions-as-a-Service. [\[Paper\]](https://arxiv.org/pdf/2001.04592.pdf) [\[GitHub\]](https://github.com/hydro-project/cloudburst)
   - Vikram Sreekanti, Chenggang Wu, Xiayue Charles Lin, Johann Schleier-Smith, Joseph E. Gonzalez, Joseph M. Hellerstein, Alexey Tumanov
   - VLDB 2020
@@ -34,7 +40,7 @@ System for machine learning inference.
 - Optimizing Prediction Serving on Low-Latency Serverless Dataflow [[Paper]](https://arxiv.org/pdf/2007.05832.pdf)
   - Sreekanti, Vikram, Harikaran Subbaraj, Chenggang Wu, Joseph E. Gonzalez, and Joseph M. Hellerstein.
   - arXiv preprint arXiv:2007.05832 (2020).
-- (Read) Serving DNNs like Clockwork: Performance Predictability from the Bottom Up. [[Paper]](https://arxiv.org/pdf/2006.02464.pdf)
+- $\color{red}{(Read)}$ Serving DNNs like Clockwork: Performance Predictability from the Bottom Up. [[Paper]](https://arxiv.org/pdf/2006.02464.pdf)
   - Gujarati, A., Karimi, R., Alzayat, S., Kaufmann, A., Vigfusson, Y. and Mace, J., 2020.
   - OSDI 2020
   - Summary (2023.4.12 by Liang): A istributed model serving system with predictable performance based on consolidating choice approach (eschewing reactive and best-effort mechanisms
