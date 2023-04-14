@@ -23,12 +23,28 @@ System for machine learning inference.
 ## Model Serving
 
 - Announcing RedisAI 1.0: AI Serving Engine for Real-Time Applications [[Blog]](https://redislabs.com/blog/redisai-ai-serving-engine-for-real-time-applications/)
+- $\color{red}{(Read)(New)}$ Serving Heterogeneous Machine Learning Models on Multi-GPU Servers with Spatio-Temporal Sharing (ATC'22) [[paper]](https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf)[[code]](https://github.com/casys-kaist/glet)
+  - Seungbeom Choi, Sunho Lee, Yeonjae Kim, Jongse Park, Youngjin Kwon and Jaehyuk Huh (Korea Advanced Institute of Science and Technology, KAIST)
+  - ATC'22
+  - Summary (2023/4/14 by Liang): 
+- $\color{red}{(Read)(New)}$ Trueno: A Cross-Platform Machine Learning Model Serving Framework in Heterogeneous Edge Systems
+  - Danyang Song∗, Yifei Zhu†(SJTU), Cong Zhang‡, and Jiangchuan Liu
+  - INFOCOM'22 DEMO
 - $\color{red}{(Read)(New)}$ SHEPHERD: Serving DNNs in the Wild [[paper]](https://hongzhangblaze.github.io/assets/pdf/shepherd.pdf)
   - Hong Zhang (University of Waterloo), Yupeng Tang, Anurag Khandelwal (Yale University), Ion Stoica (UC Berkeley)
   - NSDI 2023
 - $\color{red}{(New)}$ ORLOJ: Predictably Serving Unpredictable DNNs [[paper]](https://arxiv.org/pdf/2209.00159.pdf)
   - Peifeng Yu, Yuqing Qiu, Xin Jin, Mosharaf Chowdhury (University of Michigan)
   - arXiv
+  - Summary: A distribution-aware dynamic
+DNN serving system, to provide high throughput and
+low SLO misses. ORLOJ also takes a plan-ahead approach, but
+unlike recent solutions, it uses a random variable to capture
+the variance in request execution times of dynamic DNNs,
+rather than assuming a constant mean or tail latency for all
+requests. This gives ORLOJ more flexibility to account for
+uncertainty in execution times when batching them together
+to achieve high throughput. [[detailed notes]](zl_notes/ORLOJ.md#ORLOJ)
 - Cloudburst: Stateful Functions-as-a-Service. [\[Paper\]](https://arxiv.org/pdf/2001.04592.pdf) [\[GitHub\]](https://github.com/hydro-project/cloudburst)
   - Vikram Sreekanti, Chenggang Wu, Xiayue Charles Lin, Johann Schleier-Smith, Joseph E. Gonzalez, Joseph M. Hellerstein, Alexey Tumanov
   - VLDB 2020
@@ -46,7 +62,7 @@ System for machine learning inference.
   - Summary (2023.4.12 by Liang): A istributed model serving system with predictable performance based on consolidating choice approach (eschewing reactive and best-effort mechanisms
 and centralizing all resource consumption and scheduling
 decisions) to mitigates tail latency and achieves ideal goodput [[detailed notes]](zl_notes/Clockwork.md#clockwork)
-- Swayam: distributed autoscaling to meet SLAs of machine learning inference services with resource efficiency [[Paper]](https://www.microsoft.com/en-us/research/uploads/prod/2018/01/2017.Middleware.Swayam.TailLatencyInAzureML.pdf)
+- Swayam: distributed autoscaling to meet SLAs of machine learning inference services with resource efficiency [[Paper]](https://www.microsoft.com/en-us/research/uploads/prod/2018/01/2017.Middleware.Swayam.TailLatencyInAzureML.pdf)[[Code]](https://gitlab.mpi-sws.org/cld/ml/clockwork)
   - Gujarati, Arpan, Sameh Elnikety, Yuxiong He, Kathryn S. McKinley, and Björn B. Brandenburg.
   - In Proceedings of the 18th ACM/IFIP/USENIX Middleware Conference, pp. 109-120. 2017.
   - Summary: a cloud autoscaler. (1) model-based autoscaling that takes into account SLAs and ML inference workload characteristics, (2) a distributed protocol that uses partial load information and prediction at frontends to provi- sion new service instances, and (3) a backend self-decommissioning protocol for service instances
@@ -147,3 +163,30 @@ decisions) to mitigates tail latency and achieves ideal goodput [[detailed notes
 - TASO: Optimizing Deep Learning Computation with Automatic Generation of Graph Substitutions [[Paper]](https://cs.stanford.edu/~matei/papers/2019/sosp_taso.pdf) [[GitHub]](https://github.com/jiazhihao/TASO)
   - Jia, Zhihao, Oded Padon, James Thomas, Todd Warszawski, Matei Zaharia, and Alex Aiken. (*SOSP 2019*)
   - Experiments tested on TVM and XLA
+
+
+## Edge inference
+### Memory-efficient
+- $\color{red}{(Read)}$ GEMEL: Model Merging for Memory-Efficient, Real-Time Video Analytics at the Edge [[paper]](https://arxiv.org/pdf/2201.07705.pdf)
+  - Arthi Padmanabhan, Neil Agarwal, Anand Iyer, Ganesh Ananthanarayanan, Yuanchao Shu, Nikolaos Karianakis, Guoqing Harry Xu, Ravi Netravali (UCLA,Microsoft Research, Princeton University)
+  - NSDI'23
+  - compare with Nexus
+- $\color{red}{(Read)}$ Demand Layering for Real-Time DNN Inference with Minimized Memory Usage [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9984745)
+  - Mingoo Ji, Saehanseul Yi, Changjin Koo, Sol Ahn, Dongjoo Seo, Nikil Dutt, and Jong-Chan Kim (Kookmin University, Korea)
+  - RTSS'22
+
+
+- YUZU neural-enhanced volumetric video streaming-nsdi22-paper-zhang(NSDI’22,启发式算法)
+
+
+- Better Together: Jointly Optimizing ML Collective Scheduling and Execution Planning using SYNDICATE 
+  - NSDI’23
+  - 计算和通信两个维度感知的训练优化
+
+### Energy-efficient
+- Balancing energy efficiency and real-time performance in GPU scheduling 
+  - RTSS’21
+- Towards Energy-Efficient Real-Time Scheduling of Heterogeneous Multi-GPU Systems 
+  - RTSS’22
+
+ 
