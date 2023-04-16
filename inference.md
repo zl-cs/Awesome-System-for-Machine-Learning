@@ -23,7 +23,11 @@ System for machine learning inference.
 ## Model Serving
 
 - Announcing RedisAI 1.0: AI Serving Engine for Real-Time Applications [[Blog]](https://redislabs.com/blog/redisai-ai-serving-engine-for-real-time-applications/)
-- $\color{red}{(Read)(New)}$ Serving Heterogeneous Machine Learning Models on Multi-GPU Servers with Spatio-Temporal Sharing (ATC'22) [[paper]](https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf)[[code]](https://github.com/casys-kaist/glet)
+- $\color{red}{(New)}$  Serving and Optimizing Machine Learning Workflows on Heterogeneous Infrastructures [[paper]](https://arxiv.org/pdf/2205.04713.pdf)[[code]](https://github.com/libertyeagle/JellyBean)
+  - [Yongji Wu](https://www.yongjiwu.me/publications/), Matthew Lentz, Danyang Zhuo (Duke), Yao Lu (Microsoft)
+  - International Conference on Very Large Data Bases (VLDB) 2023
+  - Summary (23.4.16 by Liang): [detailed note]()
+- $\color{red}{(Read-50\%)(New)}$ Serving Heterogeneous Machine Learning Models on Multi-GPU Servers with Spatio-Temporal Sharing (ATC'22) [[paper]](https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf)[[code]](https://github.com/casys-kaist/glet)
   - Seungbeom Choi, Sunho Lee, Yeonjae Kim, Jongse Park, Youngjin Kwon and Jaehyuk Huh (Korea Advanced Institute of Science and Technology, KAIST)
   - ATC'22
   - Summary (2023/4/14 by Liang): 
