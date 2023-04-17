@@ -60,7 +60,7 @@ to achieve high throughput. [[detailed notes]](zl_notes/ORLOJ.md#ORLOJ)
 - Optimizing Prediction Serving on Low-Latency Serverless Dataflow [[Paper]](https://arxiv.org/pdf/2007.05832.pdf)
   - Sreekanti, Vikram, Harikaran Subbaraj, Chenggang Wu, Joseph E. Gonzalez, and Joseph M. Hellerstein.
   - arXiv preprint arXiv:2007.05832 (2020).
-- $\color{red}{(Read)}$ Serving DNNs like Clockwork: Performance Predictability from the Bottom Up. [[Paper]](https://arxiv.org/pdf/2006.02464.pdf)
+- $\color{red}{(Read)}$ Serving DNNs like Clockwork: Performance Predictability from the Bottom Up. [[Paper]](https://arxiv.org/pdf/2006.02464.pdf) [[code]](https://gitlab.mpi-sws.org/cld/ml/clockwork)
   - Gujarati, A., Karimi, R., Alzayat, S., Kaufmann, A., Vigfusson, Y. and Mace, J., 2020.
   - OSDI 2020
   - Summary (2023.4.12 by Liang): A istributed model serving system with predictable performance based on consolidating choice approach (eschewing reactive and best-effort mechanisms
@@ -192,5 +192,19 @@ decisions) to mitigates tail latency and achieves ideal goodput [[detailed notes
   - RTSS’21
 - Towards Energy-Efficient Real-Time Scheduling of Heterogeneous Multi-GPU Systems 
   - RTSS’22
+- Scrooge: A Cost-Effective Deep Learning Inference System
+  - Yitao Hu, Rajrup Ghosh, and Ramesh Govindan
+  - SoCC'21
+
+### Video pipeline
+- Llama: A Heterogeneous & Serverless Framework for Auto-Tuning Video
+Analytics Pipelines
+  - SoCC'21
+
+
+## Useful paper
+- Quasar: Resource-Efficient and QoS-Aware Cluster Management 
+  - Collaborative filtering
+  - (ASPLOS'17)
 
  
